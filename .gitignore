@@ -1,0 +1,4 @@
+node_modules
+gatewayAPI/node_modules
+coreAPI/node_modules
+package-lock.json

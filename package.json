@@ -1,0 +1,17 @@
+{
+  "name": "project-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gateway": "cd gatewayAPI/ && node_env=local nodemon",
+    "core": "cd coreAPI/ && node_env=local nodemon --ignore",
+    "dev": "concurrently --kill-others \"npm run gateway\" \"npm run core\" "
+  },
+  "keywords": [],
+  "author": "Vitor Ricardo",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
